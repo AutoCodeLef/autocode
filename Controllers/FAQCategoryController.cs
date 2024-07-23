@@ -47,7 +47,7 @@ namespace ProjectName.Controllers
             });
         }
 
-        [HttpPost("delete")]
+        [HttpPost("deleteMe")]
         public async Task<IActionResult> DeleteFAQCategory([FromBody] Request<DeleteFAQCategoryDto> request)
         {
             return await SafeExecutor.ExecuteAsync(async () =>
